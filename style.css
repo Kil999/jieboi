@@ -100,3 +100,42 @@ button:hover {
     background-color: green;
     border-radius: 10px;
 }
+
+/* Mobile controls */
+#joystick-container {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    touch-action: none;
+}
+
+#joystick {
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    touch-action: none;
+}
+
+#shootButton {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    touch-action: none;
+}

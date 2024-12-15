@@ -10,6 +10,7 @@ const player1 = { x: 50, y: 300, width: 20, height: 20, color: 'blue', speed: 5,
 const player2 = { x: 730, y: 300, width: 20, height: 20, color: 'red', speed: 5, bullets: [], health: 5, isBot: true };
 
 let gameStarted = false;
+let joystick = { active: false, initialX: 0, initialY: 0, currentX: 0, currentY: 0 };
 
 function resetGame() {
     player1.x = 50;
