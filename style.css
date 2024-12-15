@@ -118,7 +118,7 @@ button:hover {
     height: 60px;
     background-color: grey;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     left: 20px;
     top: 20px;
     touch-action: none;

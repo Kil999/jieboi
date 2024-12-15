@@ -5,12 +5,14 @@ const healthBar2 = document.getElementById('healthBar2');
 const healthBarContainer = document.querySelector('.health-bar-container');
 const player1HealthBar = document.getElementById('player1HealthBar');
 const player2HealthBar = document.getElementById('player2HealthBar');
+const joystickContainer = document.getElementById('joystick-container');
+const joystick = document.getElementById('joystick');
 
 const player1 = { x: 50, y: 300, width: 20, height: 20, color: 'blue', speed: 5, bullets: [], health: 5, dx: 0, dy: 0 };
 const player2 = { x: 730, y: 300, width: 20, height: 20, color: 'red', speed: 5, bullets: [], health: 5, isBot: true };
 
 let gameStarted = false;
-let joystick = { active: false, initialX: 0, initialY: 0, currentX: 0, currentY: 0 };
+let joystickData = { active: false, initialX: 0, initialY: 0, currentX: 0, currentY: 0 };
 
 function resetGame() {
     player1.x = 50;
